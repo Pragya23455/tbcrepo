@@ -1,0 +1,26 @@
+<!-- WAP to display multiplication number of 5 as follows:
+5 * 1 = 5
+5 * 2 = 10
+5 * 3 = 15
+……………
+…………….
+5 * 10 = 50 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplication of a number</title>
+  </head>
+  <body>
+    <script>
+      function multiplication() {
+        var num = 5;
+        document.write("Multiplication table of ", num, ": <br><br>");
+        for (var k = 1; k <= 10; k++) {
+          product = num * k;
+          document.write(num, " * ", k, " = ", product, "<br>");
+        }
+      }
+      multiplication();
+    </script>
+  </body>
+</html>

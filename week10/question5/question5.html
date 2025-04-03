@@ -1,0 +1,30 @@
+<!-- WAP in javascript using for loop to display 4 images with image name as 1.jpg, 2.jpg, 3.jpg and
+4.jpg -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loop Images</title>
+    <style>
+      img {
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function loop_images() {
+        //for loop to display 4 images
+        for (var i = 1; i <= 4; i++) {
+          var img = document.createElement("img"); // Create an <img> element
+          img.src = i + ".jpg"; //  src attribute is set to the file name(1.jpg, 2.jpg, etc).
+          img.alt = "Image " + i; // Setting an alt text for the image
+          img.width = 300;
+          img.height = 200;
+          document.body.appendChild(img);
+        }
+      }
+      loop_images();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!-- Write a program in Javascript to create variables to store numeric, float, string and
+Boolean values and show them in page with document.write() function. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Type Check using JS</title>
+  </head>
+  <body>
+    <script>
+      function value() {
+        var num = parseInt(prompt("Enter a numeric value:"));
+        var floatNum = parseFloat(prompt("Enter a floating-point value:"));
+        var string = prompt("Enter a string value:");
+        var isTrue =
+          prompt("Enter 'true' or 'false' for a Boolean value:") === "true";
+
+        document.write("Numeric value: " + num + "<br>");
+        document.write("Floating-point value: " + floatNum + "<br>");
+        document.write("String value: " + string + "<br>");
+        document.write("Boolean value: " + isTrue + "<br>");
+      }
+      value();
+    </script>
+  </body>
+</html>

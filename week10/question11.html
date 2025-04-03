@@ -1,0 +1,35 @@
+<!-- Write a JavaScript program to add items in an blank array and display the items using
+function. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 11</title>
+  </head>
+  <body>
+    <input type="text" id="text1" />
+    <input type="button" value="Add" onclick="addElement()" />
+    <input type="button" value="Display" onclick="displayArray()" />
+    <div id="result"></div>
+
+    <script>
+      var array = [];
+
+      function addElement() {
+        var value = document.getElementById("text1").value;
+        array.push(value);
+        alert("Added: " + value);
+        document.getElementById("text1").value = "";
+      }
+
+      function displayArray() {
+        var output = "<hr>";
+        for (var i = 0; i < array.length; i++) {
+          output += "Element " + i + " = " + array[i] + "<br>";
+        }
+        document.getElementById("result").innerHTML = output;
+      }
+    </script>
+  </body>
+</html>

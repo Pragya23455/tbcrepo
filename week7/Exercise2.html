@@ -1,0 +1,85 @@
+<html >
+<head>
+    <title>Text Form</title>
+    <style>
+        #form {
+          border: 2px solid black;
+          padding: 5px 5px;
+          display: inline-block;
+        }
+        /* table{
+           border-spacing: 5px; 
+        } */
+        td{
+          padding:5px;
+          padding-right: 100px;  
+        }
+
+        #country{
+            width: 200px;
+        }
+
+      </style>
+</head>
+<body>
+    <div id="form">
+        <h3>HTML Form Test</h3>
+        <form action="url " method="get">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>  <input type="text" name="n_name" /></td><br>
+     
+             </tr>
+
+             <tr>
+                <td>Address</td>
+                <td> <input type="text" name="a_name" /></td><br>
+             </tr>
+
+             <tr>
+                <td>Email</td>
+                <td> <input type="text" name="e_name" /></td><br>
+             </tr>
+
+             <tr>
+                <td>Gender </td>
+                <td><input type="radio" name="Gender" /> Male
+                    <input type="radio" name="Gender" />Female </td><br>
+             </tr>
+
+             <tr>
+                <td> Hobbies </td>
+                <td><input type="checkbox" name="hobbie1" />Sports
+                    <input type="checkbox" name="hobbie2" />Movies
+                    <input type="checkbox" name="hobbie3" />Travelling</td><br>
+             </tr>
+
+             <tr>
+                <td>Country</td>
+                <td>
+                    <select id="country"name="Country" multiple size="1">
+                      <option value="C1">Nepal</option>
+                      <option value="C2">India</option>
+                      <option value="C3">China</option>
+                      <option value="C4">USA</option>
+                      <option value="C5">Bhutan</option></select></td><br>
+             </tr>
+
+             <tr>
+                <td> Message</td>
+                <td> <textarea rows="10" column="15"></textarea></td><br>
+             </tr>
+
+             <tr>
+                <td></td>
+                <td align=left colspan="2">
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="Reset" /></td>
+             </tr>
+
+
+        </table>
+    </form>  
+</body>
+</html>

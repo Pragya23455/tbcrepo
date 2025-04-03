@@ -1,0 +1,46 @@
+<!-- WAP to get number input with prompt dialog dox and show the Day using switch case
+a. For Case 1, show Sunday
+b. For Case 2, show Monday
+c. For Case 3, show Tuesday
+d. For Case 4, show Wednesday
+e. For Case 5, show Thursday
+f. For Case 6, show Friday
+g. For Case 7, show Saturday
+h. For default, show Invalid -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Day</title>
+  </head>
+  <body>
+    <script>
+      function day() {
+        var num = parseInt(prompt("Enter a number (1 - 7):"));
+        switch (num) {
+          case 1:
+            alert("Sunday");
+            break;
+          case 2:
+            alert("Monday");
+            break;
+          case 3:
+            alert("Tuesday");
+            break;
+          case 4:
+            alert("Wednesday");
+            break;
+          case 5:
+            alert("Thursday");
+            break;
+          case 6:
+            alert("Friday");
+            break;
+          case 7:
+            alert("Saturday");
+            break;
+        }
+      }
+      day();
+    </script>
+  </body>
+</html>

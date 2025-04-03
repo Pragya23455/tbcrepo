@@ -1,0 +1,24 @@
+<!-- 8. Write a simple JavaScript program to join all elements of the following array into a
+string. Sample array : myColor = ["Red", "Green", "White", "Black"];
+Expected Output :
+"Red,Green,White,Black"
+"Red,Green,White,Black"
+"Red+Green+White+Black"  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 8</title>
+  </head>
+  <body>
+    <h2>Sample array : myColor = ["Red", "Green", "White", "Black"];</h2>
+    <p id="output1"></p>
+
+    <script>
+      var myColor = ["Red", "Green", "White", "Black"];
+
+      document.getElementById("output1").innerHTML = "⏺ " + myColor.toString();
+    </script>
+  </body>
+</html>
